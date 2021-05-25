@@ -65,13 +65,13 @@ int main()
     fourth->data = 1;
     fourth->next = head;
 
-    printf("Circular Linked list before deletion\n");
+    printf("Circular Linked list before insertion\n");
     linkedListTraversal(head);
 
     head = insertAtFirst(head, 80);
     head = insertAtFirst(head, 54);
 
-    printf("Circular Linked list after deletion\n");
+    printf("Circular Linked list after insertion\n");
     linkedListTraversal(head);
 
     return 0;

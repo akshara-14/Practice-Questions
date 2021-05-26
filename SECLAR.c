@@ -4,36 +4,41 @@
 
 int main()
 {
-    int a,b,c;
-    scanf("%d\n%d\n%d",&a,&b,&c);
-    if (a>b && a>c)
+    int a, b, c;
+    scanf("%d\n%d\n%d", &a, &b, &c);
+    if (a > b && a > c)
     {
-        if (b>c)
+        if (b > c)
         {
-            printf("%d",b);
+            printf("%d", b);
         }
-        else{
-            printf("%d",c);
-        }        
-    }
-    else if(b>a && b>c){
-        if (a>c)
+        else
         {
-            printf("%d",a);
+            printf("%d", c);
         }
-        else{
-            printf("%d",c);
-        } 
     }
-    else{
-        if (a>b)
+    else if (b > a && b > c)
+    {
+        if (a > c)
         {
-            printf("%d",a);
+            printf("%d", a);
         }
-        else{
-            printf("%d",b);
-        } 
+        else
+        {
+            printf("%d", c);
+        }
     }
-    
+    else
+    {
+        if (a > b)
+        {
+            printf("%d", a);
+        }
+        else
+        {
+            printf("%d", b);
+        }
+    }
+
     return 0;
 }

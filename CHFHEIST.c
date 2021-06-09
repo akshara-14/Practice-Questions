@@ -13,7 +13,9 @@ int main(void)
         long long int sum = 0;
         scanf("%lld %lld %lld %lld", &D, &d, &p, &q);
         long long int a = D / d;
-        sum = (p * D) + (q * (D / 2) * (a - 1)) + ((D % d) * q * a);
+        sum = (p * D) + (q * a * (a - 1)*d)/2 + ((D % d) * q * a);
+        // sum =(q * (a / 2) * (a - 1)*d);
+        // sum = (p + (D / d) * q) * (D - (D / d) * d) + (D / d) * p * d + (D / d - 1) * (D / d) * q * d / 2;
         printf("%lld\n", sum);
     }
 

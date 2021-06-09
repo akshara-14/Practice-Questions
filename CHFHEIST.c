@@ -4,30 +4,17 @@
 
 int main(void)
 {
-    int a, b, p, q, t, sum;
+    long long int D, d, p, q;
+
+    int t;
     scanf("%d", &t);
     for (int i = 0; i < t; i++)
     {
-        scanf("%d %d %d %d", &a, &b, &p, &q);
-        if (b < a)
-        {
-            sum = b * p;
-            a = a - b;
-            int temp = q;
-            while (a >= b)
-            {
-                sum = sum + (p + q) * b;
-                a = a - b;
-                q = temp + q;
-            }
-
-            if (a != 0)
-            {
-                sum = sum + (p + q) * a;
-            }
-
-            printf("%d\n", sum);
-        }
+        long long int sum = 0;
+        scanf("%lld %lld %lld %lld", &D, &d, &p, &q);
+        long long int a = D / d;
+        sum = (p * D) + (q * (D / 2) * (a - 1)) + ((D % d) * q * a);
+        printf("%lld\n", sum);
     }
 
     return 0;

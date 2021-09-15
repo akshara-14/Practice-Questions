@@ -5,53 +5,55 @@
 #include <string>
 using namespace std;
 
-class student
+class user
+{
+public:
+    string name;
+    string password;
+    string accessrights;
+    user()
     {
-        
-  public:
-  
-    int Roll_Number,year,semester;
-    string department;
-    
-    student()
-    {
-        Roll_Number = 0;
-        department = "";
-        year = 0;
-        semester = 0;
+        name = " ";
+        password = " ";
+        accessrights = "ALL";
     }
-    
-    void details()
-    {
-        cout<<"Enter Roll Number of Student: ";
-        cin>>Roll_Number;
-        cout<<"Enter Department of the Student: ";
-        cin>>department;
-        cout<<"Enter Year : ";
-        cin>>year;
-        cout<<"Enter Semester of the Student: ";
-        cin>>semester;
-    }
-    
-    void display()
-    {
-        cout<<"\n";
-        cout<<"Student Roll Number is: "<<Roll_Number<<endl;
-        cout<<"Department is: "<<department<<endl;
-        cout<<"Year is: "<<year<<endl;
-        cout<<"Semester is: "<<semester<<endl;
-    }
-    
 };
 
 int main()
 {
-    student s;
-    int i;
-    
-    s.details();
-    
-    s.display();
-    
+    user obj;
+    string pass;
+    string access;
+    string name;
+    cout << "Name of the user: " << endl;
+    cin >> name;
+    obj.name = name;
+    int n;
+    cout << "If you want to change password Press 1" << endl;
+    cin >> n;
+    if (n == 1)
+    {
+        cout << " Enter password:" << endl;
+        cin >> pass;
+        obj.password = pass;
+    }
+    else
+    {
+        obj.password = name.substr(0, 3);
+    }
+
+    cout << "If you want to change access rights Press 2" << endl;
+    int m;
+    cin >> m;
+    if (m == 2)
+    {
+        cout << "Take on values among X, R, W, and ALL" << endl;
+        cin >> access;
+        obj.accessrights = access;
+    }
+    cout << "Name of the user:" << obj.name << endl;
+    cout << "Password : " << obj.password << endl;
+    cout << "Access rights : " << obj.accessrights << endl;
+
     return 0;
 }

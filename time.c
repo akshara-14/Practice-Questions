@@ -1,6 +1,3 @@
-// Akshara Johari
-// 201378
-
 #include <stdio.h>
 #include <time.h>
 

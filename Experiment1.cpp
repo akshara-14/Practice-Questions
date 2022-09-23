@@ -1,23 +1,3 @@
-// #include<bits/stdc++.h>
-// using namespace std;
-
-// int main(){
-//     int L = 30;
-//     char str[] = "An architect may have a graphics program to draw an entire building but be interested in only ground floor";
-//     int spaceCount = 0;
-//     int count = 0;
-//     for (int i = 0; i < strlen(str); i++){
-//         count++;
-//         if (str[i] == ' '){
-//         spaceCount++;
-//         }
-//         if (spaceCount % 2 == 0 && spaceCount !=0){
-
-//         }
-//         cout<<str[i]<<endl;
-//     }
-// return 0;
-// }
 
 #include "bits/stdc++.h"
 using namespace std;

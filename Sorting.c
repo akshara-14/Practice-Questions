@@ -45,13 +45,12 @@ int partition(int A[], int low, int high)
 
 void quickSort(int A[], int low, int high)
 {
-    int partitionIndex; // Index of pivot after partition
-
+    int partitionIndex; 
     if (low < high)
     {
         partitionIndex = partition(A, low, high);
-        quickSort(A, low, partitionIndex - 1);  // sort left subarray
-        quickSort(A, partitionIndex + 1, high); // sort right subarray
+        quickSort(A, low, partitionIndex - 1);  
+        quickSort(A, partitionIndex + 1, high); 
     }
 }
 

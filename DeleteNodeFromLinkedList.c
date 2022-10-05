@@ -110,14 +110,6 @@ int main()
     printf("Linked list before deletion\n");
     linkedListTraversal(head);
 
-    // head = deleteFirst(head); // For deleting first element of the linked list
-
-    // head = deleteAtIndex(head, 2);
-
-    // head = deleteAtLast(head);
-
-    // head = deleteByValue(head, 3);
-
     printf("Linked list after deletion\n");
     linkedListTraversal(head);
 

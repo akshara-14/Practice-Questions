@@ -103,7 +103,6 @@ int main()
     third->data = 8;
     third->next = fourth;
 
-    // Terminate the list at the third node
     fourth->data = 1;
     fourth->next = NULL;
 

@@ -2,7 +2,7 @@
 
 int main(void) {
 	int n;
-	while(1)   // writing any non-zero integer in while ...loop runs infinitely 
+	while(1)    
 	{
 	    scanf("%d",&n);
 	    if(n != 42){

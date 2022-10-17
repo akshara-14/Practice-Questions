@@ -17,9 +17,8 @@ int main()
             cout << "yes\n";
             goto no;
         }
-        
     }
     cout << "no";
-    no:
+no:
     return 0;
 }

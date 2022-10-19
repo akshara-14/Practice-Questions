@@ -28,7 +28,7 @@ struct Node *insertAtFirst(struct Node *head, int data)
     {
         p = p->next;
     }
-    //At this point p points to the last node of this circular list
+    // At this point p points to the last node of this circular list
 
     p->next = ptr;
     ptr->next = head;

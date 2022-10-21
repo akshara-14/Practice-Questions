@@ -1,5 +1,3 @@
-// You are given a number N and find all the distinct factors of N.
-
 #include <stdio.h>
 
 int main(void)

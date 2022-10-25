@@ -21,9 +21,6 @@ int *findClosestElements(int *arr, int arrSize, int k, int x, int *returnSize)
         }
     }
 
-    // printf("left = %d, right = %d\n", left, right);
-    // here we found the element or the insertion position at left
-    // then we expand left and right
     int low = MAX(0, left - k);
     int high = MIN(arrSize - 1, left + k - 1);
 

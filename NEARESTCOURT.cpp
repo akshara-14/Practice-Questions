@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int t;
-    cin>>t;
+    cin >> t;
     while (t--)
     {
         int x, y;
@@ -13,7 +13,7 @@ int main()
         if (abs(c) % 2 == 0)
             cout << abs(c) / 2 << endl;
         else
-            cout <<(abs(c) + 1) / 2 << endl;
+            cout << (abs(c) + 1) / 2 << endl;
     }
     return 0;
 }

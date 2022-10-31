@@ -27,7 +27,6 @@ int main()
             }
 
             ans = min(ans, 2 * min(j, n - i - 1) + max(j, n - i - 1));
-            // cout<<i<<j<<ans<<endl;
         }
 
         cout << ans << endl;

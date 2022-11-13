@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
     // int n;
-    
+
     // for(int i = 1; i <= 5; i++){
     //     scanf("%d", &n);
     //     if(n < 0){
@@ -23,11 +23,11 @@ int main()
     case 'R':
         printf("Case 1\n");
         break;
-    
+
     case 'S':
         printf("Case 2\n");
         break;
-    
+
     case 'T':
         printf("Case 3\n");
         break;
@@ -40,7 +40,7 @@ int main()
         printf("Default case\n");
         break;
     }
- 
+
     // char operator;
     // int a, b;
     // printf("Enter an operator: ");

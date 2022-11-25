@@ -12,10 +12,9 @@ const int y_max = 8;
 const int x_min = 4;
 const int y_min = 4;
 
-
 int computeCode(double x, double y)
 {
-    
+
     int code = INSIDE;
 
     if (x < x_min) // to the left of rectangle
@@ -33,7 +32,7 @@ int computeCode(double x, double y)
 void cohenSutherlandClip(double x1, double y1,
                          double x2, double y2)
 {
-    
+
     int code1 = computeCode(x1, y1);
     int code2 = computeCode(x2, y2);
 
@@ -100,12 +99,10 @@ void cohenSutherlandClip(double x1, double y1,
     {
         cout << "Line accepted from " << x1 << ", "
              << y1 << " to " << x2 << ", " << y2 << endl;
-
     }
     else
         cout << "Line rejected" << endl;
 }
-
 
 int main()
 {

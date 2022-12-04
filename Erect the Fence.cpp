@@ -1,7 +1,8 @@
 class Solution
 {
 
-    int crossProduct(vector<int> &A, vector<int> &C, vector<int> &B){
+    int crossProduct(vector<int> &A, vector<int> &C, vector<int> &B)
+    {
         return (B[1] - A[1]) * (C[0] - A[0]) - (C[1] - A[1]) * (B[0] - A[0]);
     }
 

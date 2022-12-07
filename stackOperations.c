@@ -74,11 +74,13 @@ int peek(struct stack *sp, int i)
     }
 }
 
-int stackTop(struct stack * sp){
+int stackTop(struct stack *sp)
+{
     return sp->arr[sp->top];
 }
 
-int stackBottom(struct stack * sp){
+int stackBottom(struct stack *sp)
+{
     return sp->arr[0];
 }
 
